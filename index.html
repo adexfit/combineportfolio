@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- <link href="assets/aos/aos.css" rel="stylesheet">   -->
     <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
 
 <body>
@@ -82,7 +84,23 @@
       </div>
     
 
-    <!-- navigation menu end -->    
+    <!-- navigation menu end --> 
+    
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="details">
+            <i class="uil uil-camera"></i>
+            <span>Image Preview</span>
+          </div>
+          <div class="buttons"><i class="close-icon uil uil-times"></i></div>
+        </header>
+        <hr>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- header menu start -->  
     <header>
@@ -108,7 +126,6 @@
           </div>
       </div>
    </header>    
- 
 
 
     <!--=============- Skill start ===================== -->
@@ -177,73 +194,87 @@
 
     <!--=============- UX portfolio ===================== -->
     <section class="portfolio" data-aos="fade-up" data-aos-duration='3000' data-aos-once="true">
-      <h2> UX Projects</h2>
-      <div class="container portfolio__container">
-          <article class="project" id="pleasurate">
-            <div class="project__image">
-                <img src="images/pleasuratehd.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Pleasurate</h4>
-                <p>A real estate mobile app designed to simplify the process of securing a new apartment in Nigeria</p>
-                <a href="https://docs.google.com/presentation/d/1RR8sD_QNvu8AiB9pjyjd13ZOIjy2z1QvIU90wPDt-gw/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
-            </div>
-          </article>
+      <h2> Projects</h2>
 
-          <article class="project" id="pleasurate">
-            <div class="project__image">
-                <img src="images/egolendingdp.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Egolending</h4>
-                <p>A P2P lending platform where users can get quick no-collateral loans.</p>
-                <a href="https://docs.google.com/presentation/d/1UTmMvCHi2KpSqx9ZozN82wncalFpfwpRnzHrHE-t_ZU/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
-            </div>
-          </article>
+      <div class="centerChips" id="filter-buttons">
+        <div class="col-12">
+          <button class="chips active" data-filter="ux">UX</button>
+          <button class="chips" data-filter="graphics">Graphic design</button>
+        </div>
+      </div>
 
-          <article class="project" id="testa">
-            <div class="project__image">
-                <img src="images/testahd.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Testa</h4>
-                <p>A CBT platform for secondary schools in Nigeria</p>
-                <a href="https://docs.google.com/presentation/d/1cX422LyTCpJYmrxZLTvfzx6QHteFbSIusms237YApic/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
-            </div>
-          </article>
-        <!--
-          <article class="project">
-            <div class="project__image">
-                <img src="images/futurebilling2.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Future-X private</h4>
-                <p>A school management solution for public and private schools in Nigeria</p>
-                <a href="futurex.html" class="btn btn-primary">Read More</a>
-            </div>
-          </article>
-        -->
-          <article class="project" id="gladmak">
-            <div class="project__image">
-                <img src="images/gladmak_intro.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Gladmak</h4>
-                <p>A business website design</p>
-                <a href="https://docs.google.com/presentation/d/1ybRaiLCVoa5YC2xQBx_SjWoQAp8bnxwbaP2LkK6eI5M/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
-            </div>
-          </article>
+      <div  id="filterable-cards">
+        <div class="container portfolio__container">
+            <article class="project proj-case-studues" id="pleasurate" data-name="ux">
+              <div class="project__image">
+                  <img src="images/pleasuratehd.png" alt="#">
+              </div>
+              <div class="project__info">
+                  <h4>Pleasurate</h4>
+                  <p>A real estate mobile app designed to simplify the process of securing a new apartment in Nigeria</p>
+                  <a href="https://docs.google.com/presentation/d/1RR8sD_QNvu8AiB9pjyjd13ZOIjy2z1QvIU90wPDt-gw/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+            </article>
 
-          <article class="project">
-            <div class="project__image">
-                <img src="images/pethub.png" alt="#">
-            </div>
-            <div class="project__info">
-                <h4>Dribble Shots</h4>
-                <p>Check more of my designs on dribble</p>
-                <a href="https://dribbble.com/shots/19212191-Pethub" class="btn btn-primary" target="_blank">Visit site</a>
-            </div>
-          </article>
+            <article class="project proj-case-studues" id="pleasurate" data-name="ux">
+              <div class="project__image">
+                  <img src="images/egolendingdp.png" alt="#">
+              </div>
+              <div class="project__info">
+                  <h4>Egolending</h4>
+                  <p>A P2P lending platform where users can get quick no-collateral loans.</p>
+                  <a href="https://docs.google.com/presentation/d/1UTmMvCHi2KpSqx9ZozN82wncalFpfwpRnzHrHE-t_ZU/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+            </article>
+
+            <article class="project proj-case-studues" id="testa" data-name="ux">
+              <div class="project__image">
+                  <img src="images/testahd.png" alt="#">
+              </div>
+              <div class="project__info">
+                  <h4>Testa</h4>
+                  <p>A CBT platform for secondary schools in Nigeria</p>
+                  <a href="https://docs.google.com/presentation/d/1cX422LyTCpJYmrxZLTvfzx6QHteFbSIusms237YApic/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+            </article>
+
+            <article class="project proj-case-studues" id="gladmak" data-name="ux">
+              <div class="project__image">
+                  <img src="images/gladmak_intro.png" alt="#">
+              </div>
+              <div class="project__info">
+                  <h4>Gladmak</h4>
+                  <p>A business website design</p>
+                  <a href="https://docs.google.com/presentation/d/1ybRaiLCVoa5YC2xQBx_SjWoQAp8bnxwbaP2LkK6eI5M/edit?usp=sharing" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+            </article>
+
+            <article class="project proj-case-studues" data-name="ux">
+              <div class="project__image">
+                  <img src="images/pethub.png" alt="#">
+              </div>
+              <div class="project__info">
+                  <h4>Dribble Shots</h4>
+                  <p>Check more of my designs on dribble</p>
+                  <a href="https://dribbble.com/shots/19212191-Pethub" class="btn btn-primary" target="_blank">Visit site</a>
+              </div>
+            </article>
+
+        </div>
+
+        <div class="project hide" data-name="graphics">
+          <div class="gallery">
+            <ul class="images">
+              <li class="img"><img src="images/flyer.jpg" alt="img"></li>
+              <li class="img"><img src="images/bizcard.jpg" alt="img"></li>
+              <li class="img"><img src="images/bookfinal.jpg" alt="img"></li>
+              <li class="img"><img src="images/lyfemock.png" alt="img"></li>
+              <li class="img"><img src="images/profile.jpg" alt="img"></li>
+              <li class="img"><img src="images/certificate.png" alt="img"></li>
+              <li class="img"><img src="images/teckcard.png" alt="img"></li>
+            </ul>
+          </div>
+        </div>
 
       </div>
   </section>
