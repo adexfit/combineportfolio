@@ -261,6 +261,7 @@ img {
 	position: fixed;
 	visibility: hidden;
 	background: rgba(0,0,0,0.65);
+	/* overflow-y: scroll; */
   }
   .lightbox.show {
 	visibility: visible;
@@ -270,7 +271,7 @@ img {
 	left: 50%;
 	top: 50%;
 	width: 100%;
-	padding: 20px;
+	padding: 10px;
 	max-width: 850px;
 	background: var(--color-bg);
 	border-radius: 6px;
@@ -665,10 +666,9 @@ a{
 
 header {
     position: relative;
-    top: 5rem;
+	top: 1.5rem;
     overflow: hidden;
-    /* height: 80vh; */
-    margin-bottom: 5rem;
+	margin-bottom: 0.5rem;
 	padding: 2rem 0 2rem 0;
 }
 

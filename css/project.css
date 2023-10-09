@@ -89,9 +89,9 @@ font-weight: 400;
 }
 
 .text__column {
-	display: grid;
+	/* display: grid; */
 	/* align-items: center; */
-	justify-items: center;
+	/* justify-items: center; */
 }
 
 .text__column p{
@@ -124,6 +124,10 @@ p,li {
 
 .light__background {
 	background: var(--color-bg1);
+}
+
+img:hover {
+	cursor: pointer;
 }
 
 
