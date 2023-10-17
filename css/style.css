@@ -84,6 +84,14 @@ img {
 	margin-bottom: 5px;
 }
 
+#img_special {
+    width: auto;
+	height: 400px;
+    display: inline;
+    /* object-fit: cover; */
+	margin-bottom: 5px;
+}
+
 .btn {
     display: inline-block;
     background: var(--color-white);
