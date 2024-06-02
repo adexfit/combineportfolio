@@ -717,13 +717,6 @@ header {
 
 
 
-
-
-
-
-
-
-
 @media(min-width: 992px){
 	.header .menu > .menu-item-has-children:hover > .sub-menu{
 		transform: translateY(0);
